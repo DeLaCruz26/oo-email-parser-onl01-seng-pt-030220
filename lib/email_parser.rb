@@ -10,7 +10,7 @@ attr_accessor :emails
   end
 
   def parse
-    @emails.split(", ").join(" ").split(", ")
+    @emails.join(" ").split(", ")
   end
 
 end

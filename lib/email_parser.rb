@@ -10,5 +10,7 @@ attr_accessor :parse
   end
 
   def parse
+    
+  end
 
 end

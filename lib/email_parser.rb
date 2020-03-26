@@ -12,6 +12,9 @@ attr_accessor :emails
   def parse
     email = @emails.split(", ")
     email.join(" ").split(" ")
+    email.each do |e|
+      e.uniq
+    end
   end
 
 end

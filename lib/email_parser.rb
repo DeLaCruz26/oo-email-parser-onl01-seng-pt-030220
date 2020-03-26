@@ -12,8 +12,8 @@ attr_accessor :emails
   def parse
     email = @emails.split(", ")
     email.join(" ").split(" ")
-    [].new
-    [] << email.uniq!
+    unique_email = []
+    unique_email << email.uniq!
   end
 
 end

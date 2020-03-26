@@ -13,7 +13,7 @@ attr_accessor :emails
     email = @emails.split(", ")
     email.join(" ").split(" ")
     email.each do |e|
-      e.uniq
+      e.uniq!
     end
   end
 

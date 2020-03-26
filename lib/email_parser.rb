@@ -12,7 +12,6 @@ attr_accessor :emails
   def parse
     email = @emails.split(", ")
     email.join(" ").split(" ")
-    find_duplicates(email)
   end
 
 end
